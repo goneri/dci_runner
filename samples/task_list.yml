@@ -1,0 +1,4 @@
+- name: Ensure /etc/motd exist
+  file:
+    path: /etc/motd
+    state: present

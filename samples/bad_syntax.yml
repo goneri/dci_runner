@@ -1,0 +1,10 @@
+- hosts: localhost
+  tasks:
+    - name: Good
+      file:
+        path: /etc/fstab
+        state: file
+    - name: Bad
+      file:
+        path: /etc/fstab
+        state: bobo

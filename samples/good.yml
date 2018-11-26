@@ -1,0 +1,9 @@
+- hosts: localhost
+  tasks:
+    - name: Good
+      file:
+        path: /etc/fstab
+        state: file
+    - name: Access env var
+      debug:
+        msg: "Foo {{ foo.path }}"

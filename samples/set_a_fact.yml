@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+    - name: Set a new fact
+      set_fact:
+        foo: bar
+    - name: Run a command
+      command: ls

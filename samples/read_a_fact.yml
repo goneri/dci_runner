@@ -1,0 +1,5 @@
+- hosts: localhost
+  tasks:
+    - name: Message with the facts
+      debug:
+        msg: '{{ job_id }} from_env_file == {{ from_env_file.name }}' 
